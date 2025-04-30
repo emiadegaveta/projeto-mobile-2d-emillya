@@ -15,7 +15,7 @@ export default function HomeScreen() {
       headerBackgroundColor={{ light: '#000000', dark: '#000000' }}
       headerImage={
         <Image
-          source={require('@/assets/images/夜幕微光01-removebg-preview.png')}
+          source={require('@/assets/images/logo.png')}
           style={styles.reactLogo}
         />
       }
@@ -81,11 +81,13 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   reactLogo: {
-    height: '100%',
+    height: undefined, aspectRatio: 16/12,
     width: '100%',
-    
-
+    alignItems: 'flex-end',
+    resizeMode: 'cover',
+    position: 'absolute',
   },
+
   listContainer: {
     marginVertical: 8,
     paddingHorizontal: 16,

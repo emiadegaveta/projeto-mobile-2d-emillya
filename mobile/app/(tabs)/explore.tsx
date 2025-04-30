@@ -7,6 +7,7 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { IconSymbol } from '@/components/ui/IconSymbol';
 import { FlatList } from 'react-native';
+import undefined from '@/components/ui/TabBarBackground';
 
 export default function TabTwoScreen() {
   return (
@@ -14,7 +15,7 @@ export default function TabTwoScreen() {
       headerBackgroundColor={{ light: '#000000', dark: '#000000' }}
       headerImage={
         <Image
-          source={require('@/assets/images/confira.png')}
+          source={require('@/assets/images/28.png')} 
           style={styles.reactLogo}
         />
       }
@@ -96,8 +97,8 @@ const styles = StyleSheet.create({
     width: 20,
   },
   reactLogo: {
-    height: 410,
-    width: 300,
+    height: undefined, aspectRatio: 16/10.6,
+    width: '100%',
     alignItems: 'flex-end',
     resizeMode: 'cover',
     position: 'absolute',
